@@ -1,9 +1,9 @@
-import { useState } from "react"
-import { StyleSheet, Text, View, Image, ScrollView, KeyboardAvoidingView, Platform, Alert } from "react-native"
 import { Link } from "expo-router"
+import { useState } from "react"
+import { Alert, Image, KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text, View } from "react-native"
 
-import { Input } from "@/components/Input"
-import { Button } from "@/components/Button"
+import { Button } from "../components/Button"
+import { Input } from "../components/Input"
 
 export default function Index() {
     const [email, setEmail] = useState("")
@@ -22,7 +22,7 @@ export default function Index() {
             >
                 <View style={styles.container}>
                     <Image
-                        source={require("@/assets/img1.png")}
+                        source={require("../assets/img1.png")}
                         style={styles.illustration}
                     />
 

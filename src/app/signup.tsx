@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View, Image, ScrollView, KeyboardAvoidingView, Platform } from "react-native"
 import { Link } from "expo-router"
+import { Image, KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text, View } from "react-native"
 
-import { Input } from "@/components/Input"
-import { Button } from "@/components/Button"
+import { Button } from "../components/Button"
+import { Input } from "../components/Input"
 
 export default function Signup() {
     return (
@@ -12,7 +12,7 @@ export default function Signup() {
             >
                 <View style={styles.container}>
                     <Image
-                        source={require("@/assets/img2.png")}
+                        source={require("../assets/img2.png")}
                         style={styles.illustration}
                     />
 
