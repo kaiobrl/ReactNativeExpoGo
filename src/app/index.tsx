@@ -40,7 +40,7 @@ export default function Index() {
     return !nextErrors.email && !nextErrors.password
   }
 
-  async function handleSignIn() {
+  function handleSignIn() {
     if (!validate()) {
       return
     }

@@ -12,7 +12,7 @@ export function Button({ label, loading = false, disabled, style, containerStyle
 
   return (
     <TouchableOpacity
-      style={[styles.container, isDisabled && styles.disabled, containerStyle]}
+      style={[styles.container, isDisabled && styles.disabled, style, containerStyle]}
       activeOpacity={0.8}
       disabled={isDisabled}
       {...rest}
